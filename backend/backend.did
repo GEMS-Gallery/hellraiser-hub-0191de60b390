@@ -1,0 +1,10 @@
+type GameInfo = 
+ record {
+   description: text;
+   releaseYear: nat;
+   title: text;
+ };
+service : {
+  getGameInfo: () -> (GameInfo) query;
+  getKeyFeatures: () -> (vec text) query;
+}
